@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" gridLinesVisible="true"
+          alignment="center" styleClass="rootStyleClass">
+
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="90.0" vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <Label text="ЭЛЕКТРОНИКА И-ФОН" styleClass="header" prefWidth="500" prefHeight="100"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <GridPane GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="center" hgap="25" vgap="25"
+              styleClass="childStyleClass">
+
+        <padding>
+            <Insets bottom="25" left="25" right="25" top="25"/>
+        </padding>
+
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" halignment="CENTER"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" halignment="CENTER"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" halignment="CENTER"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" halignment="CENTER"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" halignment="CENTER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+            <RowConstraints percentHeight="14.3" vgrow="ALWAYS" valignment="CENTER"/>
+        </rowConstraints>
+
+        <Button text="АЛФА" GridPane.columnIndex="0" GridPane.rowIndex="0" prefHeight="50" prefWidth="50"
+                styleClass="usualBtn"/>
+        <Button text="/-/" GridPane.columnIndex="1" GridPane.rowIndex="0" prefHeight="50" prefWidth="50"
+                styleClass="usualBtn"/>
+        <Button text="+" GridPane.columnIndex="3" GridPane.rowIndex="0" prefHeight="50" prefWidth="50"
+                styleClass="usualBtn"/>
+        <Button text="АПП" GridPane.columnIndex="4" GridPane.rowIndex="0" prefHeight="50" prefWidth="50"
+                styleClass="usualBtn"/>
+
+        <Button onAction="#click" text="1" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn1"/>
+        <Button onAction="#click" text="2" GridPane.columnIndex="0" GridPane.rowIndex="2"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn2"/>
+        <Button onAction="#click" text="3" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn3"/>
+        <Button onAction="#click" text="4" GridPane.columnIndex="0" GridPane.rowIndex="4"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn4"/>
+        <Button onAction="#click" text="5" GridPane.columnIndex="0" GridPane.rowIndex="5"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn5"/>
+
+        <Button onAction="#click" text="6" GridPane.columnIndex="4" GridPane.rowIndex="1"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn6"/>
+        <Button onAction="#click" text="7" GridPane.columnIndex="4" GridPane.rowIndex="2"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn7"/>
+        <Button onAction="#click" text="8" GridPane.columnIndex="4" GridPane.rowIndex="3"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn8"/>
+        <Button onAction="#click" text="9" GridPane.columnIndex="4" GridPane.rowIndex="4"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn9"/>
+        <Button onAction="#click" text="0" GridPane.columnIndex="4" GridPane.rowIndex="5"
+                prefHeight="50" prefWidth="50" styleClass="clickBtn" fx:id="btn0"/>
+
+        <Button text="→" GridPane.columnIndex="0" GridPane.rowIndex="6"
+                prefHeight="50" prefWidth="50" styleClass="specBtn"/>
+        <Button text="↓" GridPane.columnIndex="1" GridPane.rowIndex="6"
+                prefHeight="50" prefWidth="50" styleClass="specBtn"/>
+        <Button text="ВВОД" GridPane.columnIndex="2" GridPane.rowIndex="6"
+                prefHeight="50" prefWidth="50" styleClass="enterBtn"/>
+        <Button text="↑" GridPane.columnIndex="3" GridPane.rowIndex="6"
+                prefHeight="50" prefWidth="50" styleClass="specBtn"/>
+        <Button text="←" GridPane.columnIndex="4" GridPane.rowIndex="6"
+                prefHeight="50" prefWidth="50" styleClass="specBtn"/>
+
+        <Label fx:id="field" GridPane.columnIndex="1" GridPane.rowIndex="1"
+               GridPane.columnSpan="3" GridPane.rowSpan="5" styleClass="bigField"
+               text=" " prefHeight="500" prefWidth="300" alignment="CENTER"/>
+
+    </GridPane>
+
+</GridPane>

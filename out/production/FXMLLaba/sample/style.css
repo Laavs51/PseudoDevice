@@ -1,0 +1,53 @@
+
+.rootStyleClass {
+    -fx-background-color: gray;
+    -fx-background-insets:  25, 25, 25, 25;
+}
+
+.header {
+    -fx-background-color: black;
+    -fx-font-size: 40;
+    -fx-alignment: "center";
+}
+
+.childStyleClass {
+    -fx-background-color: lightgray;
+    -fx-background-insets:  25, 25, 25, 25;
+}
+
+.usualBtn {
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 8pt;
+}
+
+.clickBtn {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;
+}
+
+.specBtn {
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;
+}
+
+.enterBtn {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 8pt;
+}
+
+.bigField {
+    -fx-background-color: midnightblue;
+    -fx-font-size: 36pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+
