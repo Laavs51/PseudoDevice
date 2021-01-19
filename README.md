@@ -5,6 +5,6 @@
 Приложение разработано в рамках изучения JavaFX в 2019 году и стало завершающим среди заданий цикла.
 
 # Внешний вид
-![first image](https://github.com/Laavs51/PseudoDevice/blob/main/screenshots/first.PNG) 
+![first image](https://github.com/Laavs51/PseudoDevice/blob/main/screenshots/first.png) 
 
-![second image](https://github.com/Laavs51/PseudoDevice/blob/main/screenshots/second.PNG) 
+![second image](https://github.com/Laavs51/PseudoDevice/blob/main/screenshots/second.png) 
